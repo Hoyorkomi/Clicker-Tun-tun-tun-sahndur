@@ -1,0 +1,82 @@
+body {
+    box-sizing: border-box;
+    background-image: url(./image/AAA.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+}
+
+.pers {
+    width: 500px;
+}
+
+.container {
+    width: 90dvw;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.count {
+    text-align: center;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1;
+    color: #bb4141;
+}
+
+.wrapper__sell {
+    list-style: none;
+    width: 200px;
+    padding: 15px;
+    background-color: rgba(170, 176, 182, .6);
+}
+
+.wrapper__sell li:not(:first-child) {
+    margin-top: 10px;
+}
+
+.wrapper__sell button {
+    cursor: pointer;
+    width: 100%;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: gold;
+}
+
+
+
+
+.pers {
+    animation: none;
+    width: 500px;
+}
+
+
+
+.pers:active {
+    animation-name: click;
+    animation-duration: 0.5s;
+}
+
+
+@keyframes click {
+    from {
+        transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.2);
+    }
+    
+    to {
+      transform: scale(1);
+    }
+}
+
+
